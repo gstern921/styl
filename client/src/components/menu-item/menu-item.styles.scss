@@ -8,6 +8,7 @@
   border: 1px solid black;
   margin: 0 7.5px 15px;
   overflow: hidden;
+  border-radius: 7px;
 
   &:hover {
     cursor: pointer;
@@ -52,17 +53,24 @@
     background-color: white;
     opacity: 0.7;
     position: absolute;
+    border-radius: 7px;
 
     .title {
       font-weight: bold;
       margin: 0 6px 0;
-      font-size: 22px;
+      font-size: 1.5rem;
       color: #4a4a4a;
     }
 
     .subtitle {
       font-weight: lighter;
-      font-size: 16px;
+      font-size: 1rem;
     }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .menu-item.large {
+    height: 240px;
   }
 }

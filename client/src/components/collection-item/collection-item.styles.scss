@@ -1,10 +1,20 @@
 .collection-item {
-  width: 22vw;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
   align-items: center;
   position: relative;
+  margin-bottom: 30px;
+
+  @media only screen and (max-width: 45em) {
+    width: 45%;
+  }
+  @media only screen and (max-width: 38em) {
+    width: 90%;
+  }
 
   .image {
     width: 100%;
@@ -12,6 +22,7 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
+    border-radius: 7px;
   }
 
   .custom-button {
@@ -38,7 +49,7 @@
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 1.2rem;
 
     .name {
       width: 90%;
