@@ -2,7 +2,16 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-import config from "../secrets/firebase.config";
+const config = {
+  apiKey: "AIzaSyAmRfWJEXrRcaMV7b5G8F7gmea1XTsTw4s",
+  authDomain: "styl-clothing.firebaseapp.com",
+  databaseURL: "https://styl-clothing.firebaseio.com",
+  projectId: "styl-clothing",
+  storageBucket: "styl-clothing.appspot.com",
+  messagingSenderId: "606056695698",
+  appId: "1:606056695698:web:d965d8167be56588bc234b",
+  measurementId: "G-74L3WQCGEM",
+};
 
 firebase.initializeApp(config);
 
